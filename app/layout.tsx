@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Jaldi, Jersey_10 } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const jaldi = Jaldi({
   subsets: ["latin"],
@@ -34,6 +35,9 @@ export default function RootLayout({
           <Navbar/>
         </header>
         {children}
+        <footer>
+          <Footer/>
+        </footer>
       </body>
     </html>
   );
