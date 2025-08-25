@@ -13,8 +13,8 @@ export default async function FeaturedList() {
     const pokemons = await getRandomPokemon(randomIds);
 
     return (
-        <section className="p-6">
-            <h2 className="text-center text-2xl font-bold mb-4">Featured Pokémon</h2>
+        <section className="bg-gradient-to-br [background-image:linear-gradient(-10deg,_#F2E9FC,_#F5F8FF)] pt-10 px-20 pb-15">
+            <h2 className="text-center text-4xl mb-10">Featured Pokémon</h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                 {pokemons.map((pokemon: any) => (
                     <PokemonCard key={pokemon.id} pokemon={pokemon} />

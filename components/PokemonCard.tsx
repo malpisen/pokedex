@@ -10,7 +10,7 @@ export default function PokemonCard({ pokemon }: PokemonCardProps) {
                 alt={pokemon.name}
                 className="mx-auto"
             />
-            <h3 className="text-lg font-bold">{pokemon.name}</h3>
+            <h3 className="text-lg font-bold capitalize">{pokemon.name}</h3>
             <p>HP: {pokemon.stats[0].base_stat}</p>
             <p>Attack: {pokemon.stats[1].base_stat}</p>
             <p>Defense: {pokemon.stats[2].base_stat}</p>
