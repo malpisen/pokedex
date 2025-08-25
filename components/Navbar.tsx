@@ -11,9 +11,10 @@ export default function Navbar() {
                     height={50}
                     alt="Logo"
                 />
+                <h1 className="text-center text-3xl text-transparent bg-gradient-to-r from-purple-800 to-blue-800 [background-clip:text]">Pokédex</h1>
             </Link>
             <ul className="flex gap-4">
-
+<li>Länkar</li>
             </ul>
         </nav>
     );

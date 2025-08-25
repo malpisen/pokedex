@@ -11,6 +11,7 @@ export default function Footer() {
                     height={50}
                     alt="Logo"
                 />
+                <h1 className="text-center text-3xl text-white">Pokédex</h1>
             </Link>
             <ul className="flex gap-4">
 
