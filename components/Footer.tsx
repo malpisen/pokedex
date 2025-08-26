@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function Footer() {
     return (
-        <nav className="bg-neutral-800 breakout flex items-center justify-between">
-            <ul className="flex gap-4">
+        <nav className="bg-neutral-800 flex-col items-center justify-between pt-10 pb-15">
+            <ul className="flex flex-col items-center gap-5">
                 <li>
-                    <Link href={"/"}>
+                    <Link className="flex items-center gap-3" href={"/"}>
                         <Image
                             src="/Logo.png"
                             width={50}
@@ -17,19 +17,19 @@ export default function Footer() {
                     </Link>
                 </li>
                 <li>
-                    <p className="text-white">Explore the world of Pokémon</p>
+                    <p className="text-white text-lg">Explore the world of Pokémon</p>
                 </li>
-                <li>
+                <li className="flex gap-8">
                     <Image
                         src="/Facebook.svg"
-                        width={40}
-                        height={40}
+                        width={35}
+                        height={35}
                         alt="Facebook"
                     />
                     <Image
                         src="/Instagram.svg"
-                        width={40}
-                        height={40}
+                        width={35}
+                        height={35}
                         alt="Instagram"
                     />
                 </li>
