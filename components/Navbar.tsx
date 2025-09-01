@@ -14,7 +14,7 @@ export default function Navbar() {
                 <h1 className="text-center text-3xl text-transparent bg-gradient-to-r from-purple-800 to-blue-800 [background-clip:text]">Pokédex</h1>
             </Link>
             <ul className="flex gap-6 text-xl">
-                <li>Home</li>
+                <li><Link href={"/"}>Home</Link></li>
                 <li>Pokédex</li>
                 <li>Types</li>
                 <li>Favourites</li>

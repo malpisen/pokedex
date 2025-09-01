@@ -2,24 +2,27 @@ import Image from "next/image";
 
 export default function SearchForm() {
     return (
-        <form action="/search" method="GET" className="flex justify-center my-6 px-4">
+        <form action="/pokemon" method="GET" className="flex justify-center my-10">
+            <div 
+                className="flex justify-between shadow-lg px-5 py-3 w-130 rounded-lg focus:outline-none text-lg">
             <input
                 type="text"
                 name="name"
                 placeholder="Search for a Pokémon..."
-                className="shadow-lg p-2 w-64 rounded-l-lg focus:outline-none"
+                className="focus:outline-none text-lg"
             />
             <button
                 type="submit"
-                className="shadow-lg bg-blue-500 text-white px-4 rounded-r-lg hover:bg-blue-600"
+                className="bg-indigo-400 px-3 py-1 rounded-lg"
             >
                 <Image
                     src="/Search.svg"
-                    width={25}
-                    height={25}
+                    width={15}
+                    height={15}
                     alt="Search"
                 />
             </button>
+            </div>
         </form>
     );
 }
