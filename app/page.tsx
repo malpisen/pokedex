@@ -1,6 +1,6 @@
-import Hero from "@/components/Hero";
-import FeaturedList from "@/components/FeaturedList";
-import SearchForm from "@/components/SearchForm";
+import Hero from "@/components/hero";
+import FeaturedList from "@/components/featured-list";
+import SearchForm from "@/components/search-form";
 
 export default function Home() {
   return (

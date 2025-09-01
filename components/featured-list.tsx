@@ -1,4 +1,4 @@
-import PokemonCard from "./PokemonCard";
+import PokemonCard from "./pokemon-card";
 import { getRandomId } from "@/lib/utils";
 import { getMultiplePokemons } from "@/lib/data/pokemon";
 

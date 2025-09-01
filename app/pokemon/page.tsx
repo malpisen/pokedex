@@ -1,4 +1,4 @@
-export default function Pokemon() {
+export default function Page() {
     return (
         <p>hej</p>
     )
