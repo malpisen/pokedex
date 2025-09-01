@@ -11,6 +11,7 @@
   --font-jaldi: var(--font-jaldi);
   --font-jersey: var(--font-jersey);
 }
+
 /* 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -25,7 +26,9 @@ body {
   font-family: var(--font-jaldi), Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-jersey), Arial, Helvetica, sans-serif;
 }
 
@@ -87,4 +90,158 @@ h1, h2, h3 {
 
   display: grid;
   grid-template-columns: inherit;
+}
+
+/* Badges */
+.badge-bug {
+  background-color: #94bc4a;
+}
+
+.badge-dark {
+  background-color: #736c75;
+}
+
+.badge-dragon {
+  background-color: #6a7baf;
+}
+
+.badge-electric {
+  background-color: #e5c531;
+}
+
+.badge-fairy {
+  background-color: #e397d1;
+}
+
+.badge-fighting {
+  background-color: #cb5f48;
+}
+
+.badge-fire {
+  background-color: #ea7a3c;
+}
+
+.badge-flying {
+  background-color: #7da6de;
+}
+
+.badge-ghost {
+  background-color: #846ab6;
+}
+
+.badge-grass {
+  background-color: #71c558;
+}
+
+.badge-ground {
+  background-color: #cc9f4f;
+}
+
+.badge-ice {
+  background-color: #70cbd4;
+}
+
+.badge-normal {
+  background-color: #aab09f;
+}
+
+.badge-poison {
+  background-color: #b468b7;
+}
+
+.badge-psychic {
+  background-color: #e5709b;
+}
+
+.badge-rock {
+  background-color: #b2a061;
+}
+
+.badge-steel {
+  background-color: #89a1b0;
+}
+
+.badge-water {
+  background-color: #539ae2;
+}
+
+.badge-type {
+  background-color: #81a596;
+}
+
+/* Borders */
+.border-bug {
+  border-color: #94bc4a;
+}
+
+.border-dark {
+  border-color: #736c75;
+}
+
+.border-dragon {
+  border-color: #6a7baf;
+}
+
+.border-electric {
+  border-color: #e5c531;
+}
+
+.border-fairy {
+  border-color: #e397d1;
+}
+
+.border-fighting {
+  border-color: #cb5f48;
+}
+
+.border-fire {
+  border-color: #ea7a3c;
+}
+
+.border-flying {
+  border-color: #7da6de;
+}
+
+.border-ghost {
+  border-color: #846ab6;
+}
+
+.border-grass {
+  border-color: #71c558;
+}
+
+.border-ground {
+  border-color: #cc9f4f;
+}
+
+.border-ice {
+  border-color: #70cbd4;
+}
+
+.border-normal {
+  border-color: #aab09f;
+}
+
+.border-poison {
+  border-color: #b468b7;
+}
+
+.border-psychic {
+  border-color: #e5709b;
+}
+
+.border-rock {
+  border-color: #b2a061;
+}
+
+.border-steel {
+  border-color: #89a1b0;
+}
+
+.border-water {
+  border-color: #539ae2;
+}
+
+.border-type {
+  border-color: #81a596;
 }
