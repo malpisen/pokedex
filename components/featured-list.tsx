@@ -1,6 +1,7 @@
-import PokemonCard from "./pokemon-card";
 import { getRandomId } from "@/lib/utils";
 import { getMultiplePokemons } from "@/lib/data/pokemon";
+import { Pokemon } from "@/lib/interfaces/pokemon";
+import PokemonCard from "./pokemon-card";
 
 export default async function FeaturedList() {
     {/*TODO inga likadana ids*/ }
@@ -8,10 +9,10 @@ export default async function FeaturedList() {
     const pokemons = await getMultiplePokemons(randomIds);
 
     return (
-        <section className="bg-gradient-to-br [background-image:linear-gradient(-10deg,_#F2E9FC,_#F5F8FF)] pt-10 px-25 pb-20">
+        <section className="pt-10 px-25 pb-20 bg-gradient-to-br from-indigo-50 to-pink-100">
             <h2 className="text-center text-4xl mb-10">Featured Pokémon</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                {pokemons.map((pokemon: any) => (
+                {pokemons.map((pokemon: Pokemon) => (
                     <PokemonCard key={pokemon.id} pokemon={pokemon} />
                 ))}
             </div>
