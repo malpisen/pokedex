@@ -1,9 +1,10 @@
 import { Pokemon } from "@/lib/interfaces/pokemon";
+import { formatId } from "@/lib/utils";
 
 export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
     const { id, name, sprites, types, stats } = pokemon;
-    const formattedId = String(id).padStart(3, "0");
 
+    {/*TODO stats längst ner i kortet när namn i annat kort blir flera rader*/ }
     return (
         <article className="border-5 border-indigo-400 rounded-xl shadow-lg bg-blue-50 p-4 gap-0.5 w-52 mx-auto flex flex-col items-center text-center text-xs font-bold capitalize">
             <img
@@ -12,7 +13,7 @@ export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
                 className={`border-3 rounded-full border-${types[0].type.name} bg-white mx-auto mt-4 mb-1`}
             />
 
-            <p className={`rounded-xl badge-${types[0].type.name} px-1.5`}>#{formattedId}</p>
+            <p className={`rounded-xl badge-${types[0].type.name} px-1.5`}>#{formatId(id)}</p>
 
             <h3 className="text-2xl font-normal">{name}</h3>
 
@@ -24,7 +25,7 @@ export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
             </ul>
 
             {/* ingen map pga HP ska vara stora bokstäver*/}
-            <ul className="w-full">
+            <ul className="w-full mt-1">
                 <li className="flex justify-between mt-1">
                     <span>HP</span>
                     <span>{stats[0].base_stat}</span>

@@ -3,5 +3,10 @@ export function test() {
 }
 
 export function getRandomId() {
-  return Math.floor(Math.random() * 1025) + 1;
-}    
+  const stringNumber = (Math.floor(Math.random() * 1025) + 1).toString();
+  return stringNumber;
+}
+
+export function formatId(id: string) {
+  return String(id).padStart(3, "0");
+}
