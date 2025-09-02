@@ -3,6 +3,7 @@ import { getRandomId } from "@/lib/utils";
 import { getMultiplePokemons } from "@/lib/data/pokemon";
 
 export default async function FeaturedList() {
+    {/*TODO inga likadana ids*/ }
     const randomIds = Array.from({ length: 4 }, () => getRandomId());
     const pokemons = await getMultiplePokemons(randomIds);
 
