@@ -1,8 +1,10 @@
 import { getPokemonByIdOrName } from "@/lib/data/pokemon";
 import { formatId } from "@/lib/utils";
 import PokemonCard from "@/components/pokemon-card";
+import { Suspense } from "react";
+import Loading from "./loading";
 
-export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
+export default async function Page({ params }: { params: { slug: string } }) {
     const { slug } = await params;
     const pokemon = await getPokemonByIdOrName(slug);
 
@@ -12,7 +14,9 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                 #{formatId(pokemon.id)} {pokemon.name}
             </h1>
             <div className="p-10 bg-gradient-to-br from-indigo-50 to-pink-100">
-                <PokemonCard key={pokemon.id} pokemon={pokemon} />
+                <Suspense fallback={<Loading />}>
+                    <PokemonCard key={pokemon.id} pokemon={pokemon} />
+                </Suspense>
             </div>
         </section>
     )
