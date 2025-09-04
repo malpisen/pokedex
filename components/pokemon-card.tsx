@@ -4,9 +4,11 @@ import { formatId } from "@/lib/utils";
 export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
     const { id, name, sprites, types, stats } = pokemon;
 
-    {/*TODO stats längst ner i kortet när namn i annat kort blir flera rader*/ }
+    {/*TODO storlek på kortet/namnet vid långt namn på flera rader*/ }
     return (
-        <article className="border-5 border-indigo-400 rounded-xl shadow-lg bg-blue-50 p-4 gap-0.5 w-52 mx-auto flex flex-col items-center text-center text-xs font-bold capitalize">
+        <article className="border-5 border-indigo-400 rounded-xl shadow-lg 
+        flex flex-col items-center bg-blue-50 p-4 gap-0.5 w-52 h-fit mx-auto 
+        text-center text-xs font-bold capitalize">
             <img
                 src={sprites.front_default}
                 alt={name}
