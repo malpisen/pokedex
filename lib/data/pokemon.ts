@@ -21,7 +21,7 @@ export async function getPokemonByIdOrName(idOrName: string): Promise<Pokemon> {
     return fetchPokemon(`https://pokeapi.co/api/v2/pokemon/${normalized}`);
 }
 
-export async function getMultiplePokemons(ids: string[]): Promise<Pokemon[]> {
+export async function getMultiplePokemons(ids: number[]): Promise<Pokemon[]> {
     return Promise.all(
         ids.map((id) => fetchPokemon(`https://pokeapi.co/api/v2/pokemon/${id}`))
     );

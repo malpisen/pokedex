@@ -1,10 +1,6 @@
-export function test() {
-  return "test";
-}
-
 export function getRandomId() {
-  const stringNumber = (Math.floor(Math.random() * 1025) + 1).toString();
-  return stringNumber;
+  const randomId = (Math.floor(Math.random() * 1025) + 1);
+  return randomId;
 }
 
 export function formatId(id: string) {
