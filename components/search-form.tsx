@@ -4,7 +4,8 @@ export default function SearchForm() {
     return (
         <form action="/pokemon/search" method="GET" className="flex justify-center my-10">
             <div 
-                className="flex justify-between shadow-lg rounded-lg bg-white px-5 py-3 w-130 text-lg focus:outline-none">
+                className="flex justify-between shadow-lg rounded-lg bg-white 
+                px-5 py-3 w-130 text-lg focus:outline-none">
             <input
                 type="text"
                 name="name"
