@@ -2,7 +2,7 @@ import { getPokemonByIdOrName } from "@/lib/data/pokemon";
 import { formatId } from "@/lib/utils";
 import PokemonCard from "@/components/pokemon-card";
 import { Suspense } from "react";
-import Loading from "./loading";
+import Loading from "../loading";
 
 export default async function Page({ params }: { params: { slug: string } }) {
     const { slug } = await params;

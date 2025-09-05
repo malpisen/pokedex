@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function SearchForm() {
     return (
-        <form action="/pokemon" method="GET" className="flex justify-center my-10">
+        <form action="/pokemon/search" method="GET" className="flex justify-center my-10">
             <div 
-                className="flex justify-between shadow-lg px-5 py-3 w-130 rounded-lg focus:outline-none text-lg">
+                className="flex justify-between shadow-lg rounded-lg bg-white px-5 py-3 w-130 text-lg focus:outline-none">
             <input
                 type="text"
                 name="name"
@@ -13,7 +13,7 @@ export default function SearchForm() {
             />
             <button
                 type="submit"
-                className="bg-indigo-400 px-3 py-1 rounded-lg"
+                className="bg-indigo-400 px-3 py-1 rounded-lg cursor-pointer"
             >
                 <Image
                     src="/Search.svg"
