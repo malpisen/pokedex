@@ -2,16 +2,12 @@ import { getPokemonByIdOrName } from "@/lib/data/pokemon";
 import SearchForm from "@/components/search-form";
 import PokemonCard from "@/components/pokemon-card";
 import { notFound } from "next/navigation";
-
 import { Suspense } from "react";
 import Loading from "../loading";
 
-interface SearchPageProps {
-  searchParams: { name?: string };
-}
-
-export default async function Page({ searchParams }: SearchPageProps) {
-  const query = searchParams.name?.trim();
+export default async function Page({ searchParams }: { searchParams: { name?: string } }) {
+  const params = await searchParams;
+  const query = params.name?.trim();
 
   if (!query) {
     return (
