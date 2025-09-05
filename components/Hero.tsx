@@ -8,7 +8,7 @@ export default function Hero() {
         bg-gradient-to-br from-blue-200 to-purple-400">
             <h1 className="text-center mt-14 text-6xl md:text-8xl text-transparent 
             bg-gradient-to-r from-purple-800 to-blue-800 [background-clip:text]">
-                Gotta catch 'em all!</h1>
+                Gotta catch &apos;em all!</h1>
             <p className="text-center text-xl">Discover, search and explore the amazing world of Pokémon.
                 <br />Find your favourite and learn about their stats.</p>
             <Link
