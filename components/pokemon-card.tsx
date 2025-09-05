@@ -1,5 +1,6 @@
 import { Pokemon } from "@/lib/interfaces/pokemon";
 import { formatId } from "@/lib/utils";
+import Image from "next/image";
 
 export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
     const { id, name, sprites, types, stats } = pokemon;
@@ -9,9 +10,11 @@ export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
         <article className="border-5 border-indigo-400 rounded-xl shadow-lg 
         flex flex-col items-center bg-blue-50 p-4 gap-0.5 w-52 h-fit mx-auto 
         text-center text-xs font-bold capitalize">
-            <img
+            <Image
                 src={sprites.front_default}
                 alt={name}
+                width={96}
+                height={96}
                 className={`border-3 rounded-full border-${types[0].type.name} bg-white mx-auto mt-4 mb-1`}
             />
 
